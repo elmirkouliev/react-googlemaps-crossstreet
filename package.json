@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "webpack --progress --colors --display-error-details --watch",
     "build": "webpack --progress --colors --display-error-details",
-    "test": "mocha --compilers js:babel-register --require ./test/test.js",
+    "test": "mocha --compilers js:babel-register --require ./test/helpers.js test/test.js",
     "tdd": "npm test -- --watch",
     "dev": "webpack-dev-server --content-base test/build/ --config test/webpack.config.js  --watch"
   },
@@ -29,7 +29,7 @@
   "homepage": "https://github.com/elmirkouliev/react-googlemaps-crossstreet#readme",
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^4.0.1",
+    "enzyme-adapter-react-16": "^1.0.1",
     "webpack-dev-server": "^2.9.1"
   },
   "dependencies": {
@@ -42,11 +42,9 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "enzyme": "^3.1.0",
-    "i": "^0.3.6",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "type-detect": "^4.0.3",
     "webpack": "^3.6.0"
   }
 }
