@@ -1,0 +1,52 @@
+{
+  "name": "react-gm-crosstreet",
+  "version": "1.0.0",
+  "description": "Simple way to get cross street completions from the Google Maps API",
+  "main": "build/main.js",
+  "scripts": {
+    "watch": "webpack --progress --colors --display-error-details --watch",
+    "build": "webpack --progress --colors --display-error-details",
+    "test": "mocha --compilers js:babel-register --require ./test/test.js",
+    "tdd": "npm test -- --watch",
+    "dev": "webpack-dev-server --content-base test/build/ --config test/webpack.config.js  --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmirkouliev/react-googlemaps-crossstreet.git"
+  },
+  "keywords": [
+    "react",
+    "google",
+    "google",
+    "maps",
+    "maps"
+  ],
+  "author": "Elmir Kouliev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elmirkouliev/react-googlemaps-crossstreet/issues"
+  },
+  "homepage": "https://github.com/elmirkouliev/react-googlemaps-crossstreet#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "enzyme": "^3.1.0",
+    "i": "^0.3.6",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "type-detect": "^4.0.3",
+    "webpack": "^3.6.0"
+  }
+}
